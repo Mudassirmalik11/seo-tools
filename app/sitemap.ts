@@ -4,7 +4,7 @@
 
 import { MetadataRoute } from 'next';
 import { getSitemapData } from '@/lib/tools/registry';
-
+// hello
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://seotools.example.com';
   const data = getSitemapData();

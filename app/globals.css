@@ -84,9 +84,9 @@ body {
 }
 
 .tool-interface {
-  @apply bg-white border border-gray-200 rounded-lg p-8 my-8;
+  @apply bg-white border border-gray-200 rounded-lg p-8 my-8 w-full;
 }
 
 .seo-content {
-  @apply prose prose-lg max-w-none my-12;
+  @apply prose prose-lg my-12;
 }
