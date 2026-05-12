@@ -66,47 +66,47 @@ export function WordCounter() {
       {result?.success && result.data && (
         <div className="bg-green-50 border border-green-200 rounded-lg p-6">
           <h3 className="font-bold text-lg mb-4 text-green-900">Results</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="bg-white p-4 rounded border border-green-200">
-              <div className="text-2xl font-bold text-blue-600">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+            <div className="bg-white p-3 sm:p-4 rounded border border-green-200">
+              <div className="text-xl sm:text-2xl font-bold text-blue-600">
                 {result.data.words}
               </div>
-              <div className="text-sm text-gray-600">Words</div>
+              <div className="text-xs sm:text-sm text-gray-600">Words</div>
             </div>
 
-            <div className="bg-white p-4 rounded border border-green-200">
-              <div className="text-2xl font-bold text-blue-600">
+            <div className="bg-white p-3 sm:p-4 rounded border border-green-200">
+              <div className="text-xl sm:text-2xl font-bold text-blue-600">
                 {result.data.characters}
               </div>
-              <div className="text-sm text-gray-600">Characters</div>
+              <div className="text-xs sm:text-sm text-gray-600">Characters</div>
             </div>
 
-            <div className="bg-white p-4 rounded border border-green-200">
-              <div className="text-2xl font-bold text-blue-600">
+            <div className="bg-white p-3 sm:p-4 rounded border border-green-200">
+              <div className="text-xl sm:text-2xl font-bold text-blue-600">
                 {result.data.charactersNoSpaces}
               </div>
-              <div className="text-sm text-gray-600">No Spaces</div>
+              <div className="text-xs sm:text-sm text-gray-600">No Spaces</div>
             </div>
 
-            <div className="bg-white p-4 rounded border border-green-200">
-              <div className="text-2xl font-bold text-blue-600">
+            <div className="bg-white p-3 sm:p-4 rounded border border-green-200">
+              <div className="text-xl sm:text-2xl font-bold text-blue-600">
                 {result.data.sentences}
               </div>
-              <div className="text-sm text-gray-600">Sentences</div>
+              <div className="text-xs sm:text-sm text-gray-600">Sentences</div>
             </div>
 
-            <div className="bg-white p-4 rounded border border-green-200">
-              <div className="text-2xl font-bold text-blue-600">
+            <div className="bg-white p-3 sm:p-4 rounded border border-green-200">
+              <div className="text-xl sm:text-2xl font-bold text-blue-600">
                 {result.data.paragraphs}
               </div>
-              <div className="text-sm text-gray-600">Paragraphs</div>
+              <div className="text-xs sm:text-sm text-gray-600">Paragraphs</div>
             </div>
 
-            <div className="bg-white p-4 rounded border border-green-200">
-              <div className="text-2xl font-bold text-blue-600">
+            <div className="bg-white p-3 sm:p-4 rounded border border-green-200">
+              <div className="text-xl sm:text-2xl font-bold text-blue-600">
                 {result.data.readingTime} min
               </div>
-              <div className="text-sm text-gray-600">Read Time</div>
+              <div className="text-xs sm:text-sm text-gray-600">Read Time</div>
             </div>
           </div>
         </div>

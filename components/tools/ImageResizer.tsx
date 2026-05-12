@@ -47,7 +47,7 @@ export function ImageResizer() {
       {/* Preset Sizes */}
       <div>
         <label className="block text-sm font-medium mb-3">Quick Presets</label>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
           {[
             { w: 1920, h: 1080, label: '1080p' },
             { w: 1280, h: 720, label: '720p' },
@@ -61,7 +61,7 @@ export function ImageResizer() {
             <button
               key={preset.label}
               onClick={() => { setWidth(preset.w); setHeight(preset.h); }}
-              className="px-3 py-2 bg-blue-100 hover:bg-blue-200 text-blue-900 rounded text-sm font-medium transition"
+              className="px-2 sm:px-3 py-2 bg-blue-100 hover:bg-blue-200 text-blue-900 rounded text-xs sm:text-sm font-medium transition"
             >
               {preset.label}
             </button>
